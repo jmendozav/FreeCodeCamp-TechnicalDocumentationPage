@@ -1,0 +1,6 @@
+/* Put the navbar at the top in small devices. */
+@media (max-width: 700px) {
+    #main-doc {
+        background-color: cyan;
+    }
+}
