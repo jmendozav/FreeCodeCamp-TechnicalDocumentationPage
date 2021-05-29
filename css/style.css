@@ -9,6 +9,12 @@
     border-color: rgba(0, 22, 22, 0.4);
   }
 
+  #navbar ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+  }
+
   #main-doc {
     position: absolute;
     margin-left: 310px;
