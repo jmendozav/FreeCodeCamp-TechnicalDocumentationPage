@@ -9,6 +9,13 @@
     border-color: rgba(0, 22, 22, 0.4);
   }
 
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+  
 /* Put the navbar at the top in small devices. */
 @media (max-width: 700px) {
     #main-doc {
