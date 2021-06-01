@@ -5,25 +5,27 @@
     left: 0px;
     width: 300px;
     height: 100%;
-    border-right: dashed;
-    border-color: rgba(0, 22, 22, 0.4);
+    background-color: #f5f6f7;
   }
 
   #navbar ul {
     list-style-type: none;
     margin: 0%;
     padding: 0%;
+    border: 1px solid #dfdfe2;
   }
 
   #navbar li a {
     display: block;
     color: #000;
     padding: 8px 16px;
+    margin: 0;
+    border: 1px solid #dfdfe2;
     text-decoration: none;
   }
 
   #navbar li a:hover {
-    background-color: #acd157;
+    background-color: #00471b;
     color: #fff;
   }
 
