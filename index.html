@@ -1,17 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (min-width: 500px)" href="css/laptop.css">
     <title>FreeCodeCamp-TechnicalDocumentationPage</title>
+    <style>
+        @media (min-width: 600px) {
+            #navbar {
+                position: fixed;
+                min-width: 290px;
+                top: 0px;
+                left: 0px;
+                width: 300px;
+                height: 100%;
+                background-color: #f5f6f7;
+            }
+
+            #navbar ul {
+                list-style-type: none;
+                margin: 0%;
+                padding: 0%;
+                border: 1px solid #dfdfe2;
+            }
+
+            #navbar li a {
+                display: block;
+                color: #000;
+                padding: 8px 16px;
+                margin: 0;
+                border: 1px solid #dfdfe2;
+                text-decoration: none;
+            }
+
+            #navbar li a:hover {
+                background-color: #00471b;
+                color: #fff;
+            }
+
+            #main-doc {
+                position: absolute;
+                margin-left: 310px;
+                padding: 20px;
+                margin-bottom: 110px;
+            }
+        }
+
+        #navbar {
+            top: 0px;
+            left: 0px;
+            width: 300px;
+            height: 100%;
+            background-color: #f5f6f7;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0%;
+            padding: 0%;
+            border: 1px solid #dfdfe2;
+        }
+
+        #navbar li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            margin: 0;
+            border: 1px solid #dfdfe2;
+            text-decoration: none;
+        }
+
+        #navbar li a:hover {
+            background-color: #00471b;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <header><h1>HTML Forms</h1></header>
+        <header>
+            <h1>HTML Forms</h1>
+        </header>
         <ul>
             <li><a href="#HTML_&lt;form&gt;_index" class="nav-link">HTML &lt;form&gt; index</a></li>
             <li><a href="#The_&lt;form&gt;_element" class="nav-link">The &lt;form&gt; element</a></li>
@@ -27,10 +99,13 @@
 
     <!-- Main -->
     <main id="main-doc">
-        
+
         <section class="main-section" id="HTML_&lt;form&gt;_index">
-            <header><h2>HTML &lt;form&gt; index</h2></header>
-            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.</p>
+            <header>
+                <h2>HTML &lt;form&gt; index</h2>
+            </header>
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+            </p>
             <p>Topics in this document:</p>
             <ul>
                 <li>This index.</li>
@@ -46,9 +121,11 @@
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="The_&lt;form&gt;_element">
-            <header><h2>The &lt;form&gt; element</h2></header>
+            <header>
+                <h2>The &lt;form&gt; element</h2>
+            </header>
             <p>The HTML &lt;form&gt; element is used to create an HTML form for user input:</p>
             <code><pre>
             &lt;form&gt;
@@ -57,13 +134,16 @@
                 ...
             &lt;/form&gt;
             </pre></code>
-            <p>The &lt;form&gt; element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+            <p>The &lt;form&gt; element is a container for different types of input elements, such as: text fields,
+                checkboxes, radio buttons, submit buttons, etc.</p>
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="The_&lt;input&gt;_element">
-            <header><h2>The &lt;input&gt; element</h2></header>
+            <header>
+                <h2>The &lt;input&gt; element</h2>
+            </header>
             <p>The HTML &lt;input&gt; element is the most used form element.</p>
             <p>An &lt;input&gt; element can be displayed in many ways, depending on the <em>type</em> attribute.</p>
             <p>Here are some examples:</p>
@@ -94,11 +174,13 @@
                 </tr>
             </table>
         </section>
-        
+
         <hr>
 
         <section class="main-section" id="Text_fields">
-            <header><h2>Text fields</h2></header>
+            <header>
+                <h2>Text fields</h2>
+            </header>
             <p>The <kbd>&lt;input type="text"&gt;</kbd> defines a single-line input field for text input.</p>
             <code><pre>
             &lt;form&gt;
@@ -115,23 +197,32 @@
                 <label for="lname">Last name:</label><br>
                 <input type="text" id="lname" name="lname">
             </form>
-            <p><strong>Note:</strong> The form itself is not visible. Also note that the default width of an input field is 20 characters.</p>
+            <p><strong>Note:</strong> The form itself is not visible. Also note that the default width of an input field
+                is 20 characters.</p>
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="The_label_element">
-            <header><h2>The label element</h2></header>
+            <header>
+                <h2>The label element</h2>
+            </header>
             <p>Notice the use of the &lt;label&gt; element in the example above.</p>
-            <p>The &lt;label&gt; element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.</p>
-            <p>The &lt;label&gt; element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the &lt;label&gt; element, it toggles the radio button/checkbox.</p>
-            <p>The for attribute of the &lt;label&gt; tag should be equal to the <kbd>id</kbd> attribute of the &lt;input&gt; element to bind them together.</p>
+            <p>The &lt;label&gt; element is useful for screen-reader users, because the screen-reader will read out loud
+                the label when the user focus on the input element.</p>
+            <p>The &lt;label&gt; element also help users who have difficulty clicking on very small regions (such as
+                radio buttons or checkboxes) - because when the user clicks the text within the &lt;label&gt; element,
+                it toggles the radio button/checkbox.</p>
+            <p>The for attribute of the &lt;label&gt; tag should be equal to the <kbd>id</kbd> attribute of the
+                &lt;input&gt; element to bind them together.</p>
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="Radio_buttons">
-            <header><h2>Radio buttons</h2></header>
+            <header>
+                <h2>Radio buttons</h2>
+            </header>
             <p>The <kbd>&lt;input type="radio"&gt;</kbd> defines a radio button.</p>
             <p>Radio buttons let a user select ONE of a limited number of choices.</p>
             <h3>Example</h3>
@@ -158,9 +249,11 @@
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="Checkboxes">
-            <header><h2>Checkboxes</h2></header>
+            <header>
+                <h2>Checkboxes</h2>
+            </header>
             <p>The <kbd>&lt;input type="checkbox"&gt;</kbd> defines a checkbox.</p>
             <p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
             <h3>Example</h3>
@@ -187,10 +280,13 @@
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="The_submit_button">
-            <header><h2>The submit button</h2></header>
-            <p>The <kbd>&lt;input type="submit"&gt;</kbd> defines a button for submitting the form data to a form-handler.</p>
+            <header>
+                <h2>The submit button</h2>
+            </header>
+            <p>The <kbd>&lt;input type="submit"&gt;</kbd> defines a button for submitting the form data to a
+                form-handler.</p>
             <p>The form-handler is typically a file on the server with a script for processing input data.</p>
             <p>The form-handler is specified in the form's <kbd>action</kbd> attribute.</p>
             <h3>Example</h3>
@@ -215,9 +311,11 @@
         </section>
 
         <hr>
-        
+
         <section class="main-section" id="The_name_attribute_for_input">
-            <header><h2>The name attribute for input</h2></header>
+            <header>
+                <h2>The name attribute for input</h2>
+            </header>
             <p>Notice that each input field must have a <kbd>name</kbd> attribute to be submitted.</p>
             <p>If the <kbd>name</kbd> attribute is omitted, the value of the input field will not be sent at all.</p>
             <h3>Example</h3>
@@ -230,9 +328,10 @@
             &lt;/form&gt;
             </pre></code>
         </section>
-    
+
     </main>
-    
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
